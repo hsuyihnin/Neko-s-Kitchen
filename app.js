@@ -6,32 +6,30 @@ if ( document.readyState == "loading" )
   showreceipesToUI();
 }
 
-
-$( ".owl-carousel" ).owlCarousel( {
+$( '.owl-carousel' ).owlCarousel( {
   loop: true,
-  margin: 0,
-  gap: 1,
-  responsiveClass: true,
+  margin: 10,
+  nav: true,
   responsive: {
-    0: {
-      items: 6,
+   
+ 1536: {
+      items: 6
     },
+  }
+} )
 
-    1496: {
-      items: 6,
-    },
-    640: {
-      items: 3,
-    },
-  },
-} );
 
-function AddToReceipesListOne ( receipeone )
+let receipes = [];
+
+
+function AddToReceipesListOne ( receipeone, index = 1 )
 {
   const sectionContainer = document.querySelector( ".receipes-container" );
   const container = document.querySelector( ".receipes" );
   const receipeDiv = document.createElement( "div" );
-  receipeDiv.classList = `bg-white receipe col-2 px-0`;
+  receipeDiv.classList = ` receipe col-2 px-0`;
+  receipeDiv.setAttribute( "data-aos", "fade-right" );
+  receipeDiv.setAttribute( "data-aos-delay", index * 100 );
   receipeDiv.innerHTML = `
     <img src=${ receipeone.image } class="w-100 receipe-image" alt=""/>
    <div class="receipe-body p-2">
@@ -39,34 +37,32 @@ function AddToReceipesListOne ( receipeone )
   <h3 class="receipe-title fs-5 fw-bold">${ receipeone.title }</h3>
   <p class="receipe-description">${ receipeone.description }</p>
   <div class="star-widget ">
-  <input type="radio" name="rate" id="rate-5">
-  <label for ="rate-5" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-4">
-  <label for ="rate-4" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-3">
-  <label for ="rate-3" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-2">
-  <label for ="rate-2" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-1">
-  <label for ="rate-1" class="fas fa-star"></label>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
             </div>
   <span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipeone.author }</a></span>
   
-                <a class="add-button px-2 py-2 mt-1" aria-label="save to bookmark" href="#">
+               
+                      </div> <button class="add-button px-2 py-2 mt-1" aria-label="save to bookmark" >
            <i class="fa-solid fa-heart"></i>
-                      </a>
-                      </div>`;
+                      </button>`;
 
   container.appendChild( receipeDiv );
   sectionContainer.appendChild( container );
 }
 
-function AddToReceipesListTwo ( receipetwo )
+function AddToReceipesListTwo ( receipetwo, index = 1 )
 {
   const containerSection = document.querySelector( ".receipes-container-two" );
   const receipeContainer = document.querySelector( ".receipes-two" );
   const receipeDiv = document.createElement( "div" );
-  receipeDiv.classList = `col-2 receipe bg-white px-0`;
+
+  receipeDiv.classList = `col-2 receipe px-0`;
+  receipeDiv.setAttribute( "data-aos", "fade-up" );
+  receipeDiv.setAttribute( "data-aos-delay", index * 100 );
   receipeDiv.innerHTML = `
  <img src=${ receipetwo.image } class="w-100 receipe-image" alt=""/>
   <div class="receipe-body p-2">
@@ -74,35 +70,31 @@ function AddToReceipesListTwo ( receipetwo )
   <h3 class="receipe-title fs-5 fw-bold">${ receipetwo.title }</h3>
   <p class="receipe-description">${ receipetwo.description }</p>
 
-    <div class="star-widget ">
-  <input type="radio" name="rate" id="rate-5">
-  <label for ="rate-5" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-4">
-  <label for ="rate-4" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-3">
-  <label for ="rate-3" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-2">
-  <label for ="rate-2" class="fas fa-star"></label>
-  <input type="radio" name="rate" id="rate-1">
-  <label for ="rate-1" class="fas fa-star"></label>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
+ <i class="fa-solid fa-star"></i>
             </div>
 
   <span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipetwo.author }</a></span>
-  <a class="add-button py-2 px-2 mt-1"  aria-label="save to bookmark" href="#">
+ 
+ </div> <button class="add-button py-2 px-2 mt-1"  aria-label="save to bookmark" >
               <i class="fa-solid fa-heart"></i>
-                      </a>
- </div>`;
+                      </button>`;
 
   receipeContainer.appendChild( receipeDiv );
   containerSection.appendChild( receipeContainer );
 }
 
-function AddToReceipesListThree ( receipethree )
+function AddToReceipesListThree ( receipethree, index = 1 )
 {
   const section = document.querySelector( ".receipes-container-three" );
   const container = document.querySelector( ".receipes-three" );
   const receipeDiv = document.createElement( "div" );
-  receipeDiv.classList = `col-2 receipe bg-white px-0`;
+  receipeDiv.classList = `col-2 receipe px-0`;
+  receipeDiv.setAttribute( "data-aos", "zoom-in" );
+  receipeDiv.setAttribute( "data-aos-delay", index * 100 );
   receipeDiv.innerHTML = `<img src=${ receipethree.image } class="w-100 receipe-image" alt=""/>
  <div class="receipe-body p-2">
  <span hidden>${ receipethree.id }</span>
@@ -110,23 +102,18 @@ function AddToReceipesListThree ( receipethree )
    <p class="receipe-description">${ receipethree.description }</p>
 
      <div class="star-widget ">
-   <input type="radio" name="rate" id="rate-5">
-   <label for ="rate-5" class="fas fa-star"></label>
-   <input type="radio" name="rate" id="rate-4">
-   <label for ="rate-4" class="fas fa-star"></label>
-   <input type="radio" name="rate" id="rate-3">
-   <label for ="rate-3" class="fas fa-star"></label>
-   <input type="radio" name="rate" id="rate-2">
-   <label for ="rate-2" class="fas fa-star"></label>
-   <input type="radio" name="rate" id="rate-1">
-   <label for ="rate-1" class="fas fa-star"></label>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
+   <i class="fa-solid fa-star"></i>
              </div>
 
   <span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipethree.author }</a></span>
   
-              <a class="add-button px-2 py-2 " aria-label="save to bookmark" href="#">
+                  </div><button class="add-button px-2 py-2 " aria-label="save to bookmark">
              <i class="fa-solid fa-heart"></i>
-                       </a>     </div>`;
+                       </button> `;
 
   container.appendChild( receipeDiv );
   section.appendChild( container );
@@ -141,17 +128,43 @@ function showreceipesToUI ()
     {
       receipesArrOne = receipes;
 
-      collectionOne = receipesArrOne.slice( 0, 5 );
-      collectionOne.forEach( ( receipe ) =>
+      collectionOne = receipesArrOne.slice( 0, 15 );
+      collectionOne.forEach( ( receipe, index ) =>
       {
-        AddToReceipesListOne( receipe );
+        AddToReceipesListOne( receipe, index );
       } )
+      const search = document.querySelector( '#search' );
+      const receipeList = document.querySelector( '.receipes' );
+
+
+      search.addEventListener( 'keyup', () =>
+      {
+
+        const searchTerm = search.value.toLowerCase();
+
+        filterReceipes = collectionOne.filter( receipe =>
+        {
+          return [ receipe.image, receipe.title, receipe.author, receipe.description ].join( '' ).toLocaleLowerCase().includes( searchTerm )
+        } );
+
+        receipeList.innerHTML = '';
+
+
+        filterReceipes.forEach( ( item ) =>
+        {
+          AddToReceipesListOne( item )
+        } )
+      } )
+
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
         button.addEventListener( "click", saveToCart );
       } )
     } ).catch( ( error ) => console.log( error ) );
+
+
+
 
 
   let receipesArrTwo = [];
@@ -161,11 +174,37 @@ function showreceipesToUI ()
     {
       receipesArrTwo = receipes;
 
-      collectionTwo = receipesArrTwo.slice( 5, 15 );
-      collectionTwo.forEach( ( receipe ) =>
+      collectionTwo = receipesArrTwo.slice( 15, 30 );
+      collectionTwo.forEach( ( receipe, index ) =>
       {
-        AddToReceipesListTwo( receipe );
+        AddToReceipesListTwo( receipe, index );
       } )
+
+      const search = document.querySelector( '#search' );
+      const receipeList = document.querySelector( '.receipes-two' );
+      const shopContainer = document.querySelector( '.shop-container' );
+      search.addEventListener( 'keyup', () =>
+      {
+
+        const searchTerm = search.value.toLowerCase();
+
+        filterReceipes = collectionTwo.filter( receipe =>
+        {
+          return [ receipe.image, receipe.title, receipe.author, receipe.description ].join( '' ).toLocaleLowerCase().includes( searchTerm )
+        } );
+
+        receipeList.innerHTML = '';
+        shopContainer.style.display = 'none';
+
+        filterReceipes.forEach( ( item ) =>
+        {
+          AddToReceipesListTwo( item )
+        } )
+      } )
+
+
+
+
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
@@ -179,11 +218,44 @@ function showreceipesToUI ()
     .then( ( receipes ) =>
     {
       receipesArrThree = receipes;
-      collectionThree = receipesArrThree.slice( 15, 25 );
-      collectionThree.forEach( ( receipe ) =>
+      collectionThree = receipesArrThree.slice( 30, 50 );
+      collectionThree.forEach( ( receipe, index ) =>
       {
-        AddToReceipesListThree( receipe );
+        AddToReceipesListThree( receipe, index );
       } );
+
+
+      const search = document.querySelector( '#search' );
+      const receipeList = document.querySelector( '.receipes-three' );
+      const containerFive = document.querySelector( '.container-five' );
+      const containerThree = document.querySelector( '.container-three' );
+      const lateSummer = document.querySelector( '.latesummer-container' );
+      const mohinga = document.querySelector( '.mohinga-container' );
+
+
+      search.addEventListener( 'keyup', () =>
+      {
+
+        const searchTerm = search.value.toLowerCase();
+
+        filterReceipes = collectionThree.filter( receipe =>
+        {
+          return [ receipe.image, receipe.title, receipe.author, receipe.description ].join( '' ).toLocaleLowerCase().includes( searchTerm )
+        } );
+
+        receipeList.innerHTML = '';
+        containerFive.style.display = 'none';
+        containerThree.style.display = 'none';
+        lateSummer.style.display = 'none';
+        mohinga.style.display = 'none';
+
+        filterReceipes.forEach( ( item ) =>
+        {
+          AddToReceipesListThree( item )
+        } )
+      } )
+
+
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
@@ -209,19 +281,23 @@ function saveToCart ( event )
     author: author,
     id: Number( id ),
   }
+  receipes.push( receipe );
 
-  console.log( receipe );
+
+
   let allReceipes = JSON.parse( localStorage.getItem( "favorites" ) ) || [];
+  allReceipes.push( receipe );
 
- for ( let i = 0; i < allReceipes.length; i++ )
- {
-   if ( allReceipes[ i ].id !== receipe.id )
-   {
-     allReceipes.push(receipe);
-   }
-   
- }
-  
-  localStorage.setItem( 'favorites', JSON.stringify( allReceipes ) );
+
+  //  for ( let i = 0; i < allReceipes.length; i++ )
+
+  //   if(allReceipes[i].id !==receipe.id) {
+  //      console.log( 'saving' );
+  //     allReceipes.push(receipe)
+
+  //  }
+
+
+  localStorage.setItem( 'favorites', JSON.stringify( allReceipes ) )
 }
 

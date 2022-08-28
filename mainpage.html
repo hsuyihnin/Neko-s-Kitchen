@@ -15,15 +15,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
 
-  <script src="app.js " defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-  <nav class="py-2 bg-white ">
+  <nav class="py-2 bg-white  ">
     <div class="navbar_container container d-flex justify-content-between align-items-center p-0">
       <div class="navbar_menu d-flex align-items-center">
         <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"
@@ -48,7 +46,7 @@
               </g>
             </svg>
           </span>
-          <input class="border-0" type="text" placeholder="Search a receipe" />
+          <input id="search" class="border-0" type="text" placeholder="Search a receipe" />
         </div>
       </div>
 
@@ -109,6 +107,7 @@
       </div>
     </div>
   </nav>
+
   <main>
     <section class="receipes-container my-5">
       <div class="container receipes row mx-auto px-0">
@@ -118,87 +117,88 @@
       </div>
     </section>
 
-    <section class="container-two">
-      <div class="row owl-carousel owl-theme">
-        <div class="mx-2 bg-white col receipe-item text-center">
+ <section class="container-two">
+      <div class=" owl-carousel owl-theme">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/air flyer.webp" / alt="air
             flyer receipes">
           <span>
             <p class="mb-0">Air Fryer Recipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class="mx-3 bg-white item text-center">
           <img class="img-fluid d-block" src="images/cookies.webp" / alt="cookies">
           <span>
             <p class="mb-0">Cookies</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/appetizer.webp" / alt="appetizers and snacks">
           <span>
             <p class="mb-0">Appetizers and Snacks</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/bbq.webp" / alt="BBQ&Grilling">
           <span>
             <p class="mb-0">BBQ&Grilling</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/breakfast.webp" / alt="Breakfast and Brunch receipes">
           <span>
             <p class="mb-0">Breakfast and Bruch Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/chicken.webp" / alt="Chicken Receipes">
           <span>
             <p class="mb-0">Chicken Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white col item text-center">
           <img class="img-fluid d-block" src="images/dessert.webp" / alt="Dessert Receipes">
           <span>
             <p class="mb-0">Dessert Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/ground beef.webp" / alt="Ground Beef Receipes">
           <span>
             <p class="mb-0">Ground Beef Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/instant pot.webp" / alt="Instant Pot receipes">
           <span>
             <p class="mb-0">InstantPot Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class="bg-white item text-center">
           <img class="img-fluid d-block" src="images/quick and easy.webp" / alt="quick and easy Receipes">
           <span>
             <p class="mb-0">Quick and easy Receipes</p>
           </span>
         </div>
-        <div class="mx-2 bg-white col receipe-item text-center">
+        <div class=" bg-white item text-center">
           <img class="img-fluid d-block" src="images/slow cooker.webp" / alt="Slow Cooker Receipes">
           <span>
             <p class="mb-0">Slow Cooker Receipes</p>
           </span>
         </div>
 
-        <div class="mx-2 bg-white text-center col receipe-item">
+        <div class="bg-white text-center item">
           <img class="img-fluid d-block" src="images/stew.webp" / alt="Soup,Stew and Chilli receipes">
           <span>
             <p class="mb-0">Soup,Stew and Chilli receipes</p>
           </span>
         </div>
+
       </div>
     </section>
 
     <section class="container-three my-5">
-      <div class="container mx-auto">
+      <div class="container peach mx-auto">
         <h2 class="fw-bold">Easy Peach Receipes</h2>
 
         <div class="d-flex peachreceipes">
@@ -225,7 +225,7 @@
     </section>
 
     <section class="latesummer-container py-4 border">
-      <div class="container mx-auto px-0">
+      <div class="container summer mx-auto px-0">
         <h2 class="text-center fw-bold">Late Summer Baking Ideas</h2>
         <div class="d-flex receipes">
           <div class="zucchini">
@@ -251,72 +251,66 @@
         <!-- <div class="heart">
             <img src="images/heart .png" alt=""/>
                     </div>  -->
-      </div>
+      </div> 
+      <section class="shop-container my-5">
+  <div class="coffee-machine container px-0">
+    <div class="machine"><img class="w-100 " src = "images/coffeemachine.webp" alt=""></div>
+    <div class="overlay"></div>
+    <div class="products">
+      <img src="images/machine1.jpeg "
+alt=""/>
+<img src=" images/machine2.jpeg" alt=""/>
+<img src = "images/machine3.jpeg" alt=""/>
+<img src = "images/machine4.jpeg" alt=""/> <br/> 
+<img src = "images/machine5.jpg" alt=""/> 
+ <img src = "images/machine6.jpg" alt=""/> 
+  <img src = "images/machine7.jpg" alt=""/> 
+   <img src = "images/machine8.jpg" alt=""/>    </div>
+<div class="btn"><button><i class="fa-solid fa-cart-shopping"></i>Buy</button></div>
+   
+
+   
+  </div>
+
+</section>
     </section>
-    <section class="mt-5">
-      <div class="container mx-auto px-0 row d-flex justify-content-between mb-5">
-        <div class="col-9 px-0 text-center">
-          <img class="w-100" src="images/mohinga.webp" alt="Permesan" />
-          <h3 class="fs-2">
+    <section class="my-5 mohinga-container">
+      <div class="container mohinga mx-auto px-0  row">
+      
+        <div class="col-8 image p-0">
+          <img class="w-100" src="images/mohinga.jpg" alt="" /> <div class="tag">Receipe of the day</div></div>
+<div class="text col ">
+          <h3 class="fs-3 fw-bold">
             Myanmar's Traditional Food
-            <span class="text-warning fs-1 fw-bold"><em>Mohinga</em></span>
+            <span class="text-warning fs-1 "><em>Mohinga</em></span>
           </h3>
-          <div class="star-widget">
-            <input type="radio" name="rate" id="rate-5" />
-            <label for="rate-5" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-4" />
-            <label for="rate-4" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-3" />
-            <label for="rate-3" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-2" />
-            <label for="rate-2" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-1" />
-            <label for="rate-1" class="fas fa-star"></label>
+          <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aspernatur fuga ex optio vel cupiditate quidem dicta enim quos rerum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id repellat autem vitae veritatis pariatur blanditiis vel illo placeat voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quas tempore dicta magni sequi reprehenderit quidem odit natus rerum nesciunt.</p>
+          <div class="rating mt-5 text-warning">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <span>By <a class="text-black fw-bold" href="#">KKK</a></span>
+</div>
         </div>
-        <div class="sloppy col-2 px-0 border bg-white ">
-          <div class="heart bg-warning px-1 py-2">
-            <i class="fa-solid fa-heart"></i>
-          </div>
-          <img class="w-100" src="images/sloppy.webp" alt="Sloppy" />
-          <h3 class="fs-5 fw-bold px-2">Sloppy Joes</h3>
-          <p class="px-2">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
-            nulla iste commodi et enim dolore ea! Quo ipsum minima, natus, cum
-            animi facilis inventore at est, expedita magnam suscipit libero?
-          </p>
-          <div class="star-widget px-2">
-            <input type="radio" name="rate" id="rate-5" />
-            <label for="rate-5" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-4" />
-            <label for="rate-4" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-3" />
-            <label for="rate-3" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-2" />
-            <label for="rate-2" class="fas fa-star"></label>
-            <input type="radio" name="rate" id="rate-1" />
-            <label for="rate-1" class="fas fa-star"></label>
-          </div>
-          <span class="px-2">By <a class="fw-bold text-black" href="#">Tamara</a></span>
-        </div>
-      </div>
     </section>
+   
     <section class="container-five mb-5">
-      <div class="container px-0 mx-auto row d-flex justify-content-between">
+      <div class="container trending_saladmeal px-0 mx-auto row d-flex justify-content-between align-items-center p-0">
         <div class="col-4 cornsalad_meal d-flex flex-column text-center">
-          <div class="cornsalad">
+          <div class="cornsalad bg-white">
             <img class="w-100" src="images/cornsalad.webp" alt="" />
             <a href="#">13 Summery Corn Salads</a>
           </div>
-          <div class="meal">
+          <div class="meal bg-white">
             <img class="w-100" src="images/meals.webp" alt="" />
             <a href="#">35 Meals to Make With Ground Beef</a>
           </div>
           <!-- cornsalad and meals -->
         </div>
 
-        <div class="trending col-7">
+        <div class="trending col-7 p-0">
           <h3 class="text-center fw-bold fs-2">Trending</h3>
           <div class="allreceipes d-flex flex-column">
             <div class="first-three-receipes d-flex text-center">
@@ -361,6 +355,8 @@
       <div class="container receipes-three row mx-auto px-0"></div>
     </section>
 
+
+
     <section class="container-six mt-5">
       <div class="container casseroles p-0">
         <div class="tag">Collection Of The Day</div>
@@ -388,9 +384,12 @@
       <!--container  -->
     </section>
     <section class="show-container mt-5">
-      <h2 class="text-center fw-bold mb-5">What's on TV?</h2>
-      <div class="container p-0 mx-auto d-flex justify-content-between">
-        <div class="p-0 bg-white">
+     
+      <div class="container show p-0"> 
+        <div class="p-0 mx-auto row">
+        <h2 class="text-center fw-bold mb-5">What's on TV?</h2>
+        <div class="row"></div>
+        <div class="p-0 bg-white col-9">
           <img class="w-100" src="images/guy.jpeg" alt="" />
           <p class="ps-2">DINERS, DRIVE-INS AND DIVES</p>
           <h2 class="ps-2">Guy Takes a Walk Down Memory Lane</h2>
@@ -399,9 +398,9 @@
             <span class="border-start border-3 border-dark">3c</span>
           </p>
         </div>
-        <div class="anothershows p-0">
+        <div class="anothershows p-0 col">
           <div>
-            <img src="images/egg.jpeg" alt="" />
+            <img class="w-100" src="images/egg.jpeg" alt="" />
             <p>THE KITCHEN</p>
             <h3>How TO Make The Best Bolied Eggs</h3>
             <p>
@@ -410,7 +409,7 @@
             </p>
           </div>
           <div>
-            <img src="images/prepschool.jpeg" alt="" />
+            <img class="w-100" src="images/prepschool.jpeg" alt="" />
             <p>ALEX VS AMERICA</p>
             <h3>Prep School: The Perfect Crispy Pork Chop</h3>
             <p>
@@ -419,7 +418,7 @@
             </p>
           </div>
           <div>
-            <img src="images/picnic.jpeg" alt="" />
+            <img class="w-100" src="images/picnic.jpeg" alt="" />
             <p>DELICIOUS MISS BROWN</p>
             <h3>Fresh Salads + Hearty Sandwiches for Picnics</h3>
             <p>
@@ -428,7 +427,7 @@
             </p>
           </div>
           <div>
-            <img src="images/la.jpeg" alt="" />
+            <img  class="w-100" src="images/la.jpeg" alt="" />
             <p>BOBBY + SOPHIE ON THE COAST</p>
             <h3>Cruising + Eating Across LA</h3>
             <p>
@@ -437,7 +436,7 @@
             </p>
           </div>
           <div>
-            <img src="images/ideas.jpeg" alt="" />
+            <img class="w-100" src="images/ideas.jpeg" alt="" />
             <p>49 GENIUS IDEAS</p>
             <h3>
               Why Heat Up Your Whole Kitchen When You Can Make Dinner in Your
@@ -449,7 +448,7 @@
             </p>
           </div>
           <div>
-            <img src="images/planning.jpeg" alt="" />
+            <img class="w-100" src="images/planning.jpeg" alt="" />
             <p>IT'S TIME TO START PLANNING</p>
             <h3>Summery Apps to Add to Your Labor Day Menu</h3>
             <p>
@@ -458,10 +457,11 @@
             </p>
           </div>
         </div>
-        <!-- another shows -->
+  
       </div>
-      <!-- container -->
+   </div>
     </section>
+
 
   </main>
   <footer class="mt-5 ">
@@ -483,11 +483,21 @@
           reserved.</span>
       </div>
     </div>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  </footer> 
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="owl_carousel/owl.carousel.js"></script>
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="owl_carousel/owl.carousel.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="app.js "></script> 
+   <script>
+  AOS.init();
+</script>
 </body>
 
 </html>
