@@ -69,16 +69,14 @@ function AddToReceipesListTwo ( receipetwo, index = 1 )
   <span hidden>${ receipetwo.id }</span>
   <h3 class="receipe-title fs-5 fw-bold">${ receipetwo.title }</h3>
   <p class="receipe-description">${ receipetwo.description }</p>
-
+  <div class="star-widget ">
  <i class="fa-solid fa-star"></i>
  <i class="fa-solid fa-star"></i>
  <i class="fa-solid fa-star"></i>
  <i class="fa-solid fa-star"></i>
  <i class="fa-solid fa-star"></i>
             </div>
-
-  <span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipetwo.author }</a></span>
- 
+<span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipetwo.author }</a></span>
  </div> <button class="add-button py-2 px-2 mt-1"  aria-label="save to bookmark" >
               <i class="fa-solid fa-heart"></i>
                       </button>`;
@@ -109,7 +107,7 @@ function AddToReceipesListThree ( receipethree, index = 1 )
    <i class="fa-solid fa-star"></i>
              </div>
 
-  <span class="fs-6">By <a class="fw-bold text-black receipe-author" href="#">${ receipethree.author }</a></span>
+  <span class="fs-6 ">By <a class="fw-bold text-black receipe-author" href="#">${ receipethree.author }</a></span>
   
                   </div><button class="add-button px-2 py-2 " aria-label="save to bookmark">
              <i class="fa-solid fa-heart"></i>
