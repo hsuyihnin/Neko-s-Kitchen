@@ -6,9 +6,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #E4EFE7!important;
-  width:1536px;
-  
+  background-color: #e4efe7 !important;
+  width: 1536px;
 
   font-family: "Arvo", serif !important;
 }
@@ -26,9 +25,9 @@ body {
 }
 
 nav {
-  position:sticky;
-  top:0;
-  z-index:1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: white;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
@@ -55,7 +54,7 @@ nav {
 .receipes .receipe,
 .receipes-two .receipe,
 .receipes-three .receipe {
- background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 .receipes-container .receipes .receipe {
   position: relative;
@@ -66,7 +65,7 @@ nav {
 .receipes-container-three .receipes-three .receipe {
   position: relative;
 }
-.receipes-container .receipe p{
+.receipes-container .receipe p {
   font-size: 0.8em;
   overflow: hidden;
   display: -webkit-box;
@@ -81,7 +80,7 @@ nav {
   top: 0;
   color: #f2f4fb;
   border-radius: 50%;
-  padding:0px 20px;
+  padding: 0px 20px;
   width: 40px;
   border: none;
   background-color: #443737;
@@ -91,7 +90,7 @@ nav {
   position: absolute;
   top: 0;
   color: #f2f4fb;
-    padding:0px 20px;
+  padding: 0px 20px;
   width: 40px;
   border-radius: 50%;
   border: none;
@@ -100,7 +99,7 @@ nav {
 .receipes-three .receipe .add-button {
   top: 0;
   position: absolute;
-    padding:0px 20px;
+  padding: 0px 20px;
   color: #f2f4fb;
   width: 40px;
   border-radius: 50%;
@@ -134,26 +133,24 @@ nav {
 }
 
 .latesummer-container {
-  background-color: #D1E8E4;
+  background-color: #d1e8e4;
 }
-.mohinga-container .image{
+.mohinga-container .image {
   position: relative;
   overflow: hidden;
 }
 
 .mohinga-container .tag {
-  width:400px;
- top:10%;
- left:-8%;
- text-align: center;
-   background-color: #931A25;
-   color:#FBE2E5;
+  width: 400px;
+  top: 10%;
+  left: -8%;
+  text-align: center;
+  background-color: #931a25;
+  color: #fbe2e5;
 
- padding:10px;
-position:absolute;
-transform: rotate(-40deg);
-
-    
+  padding: 10px;
+  position: absolute;
+  transform: rotate(-40deg);
 }
 .latesummer-container .receipes {
   gap: 5em;
@@ -164,16 +161,13 @@ transform: rotate(-40deg);
   width: 500px;
 }
 
-
-.star-widget i{
-  color:orangered;
-  
-
+.star-widget i {
+  color: orangered;
 }
 
-.container-five{
-  background-color: #D1E8E4;
-  padding:4em 0 4em 0;
+.container-five {
+  background-color: #d1e8e4;
+  padding: 4em 0 4em 0;
 }
 .container-five a {
   text-decoration: none;
@@ -204,7 +198,7 @@ transform: rotate(-40deg);
 }
 
 .receipes {
-  gap:1em;
+  gap: 1em;
   display: flex;
   justify-content: space-between;
 }
@@ -256,8 +250,7 @@ transform: rotate(-40deg);
 .casseroles .casseroles-text {
   width: 400px;
   height: 50vh;
-  background-color: #D1E8E4;
- 
+  background-color: #d1e8e4;
 }
 
 .casseroles .image {
@@ -315,28 +308,27 @@ footer a {
   top: 0;
 }
 
-.shop-container .products{
+.shop-container .products {
   position: absolute;
-  top:20%;
-  left:23%;
-  
-  gap:2em;
+  top: 20%;
+  left: 23%;
 
+  gap: 2em;
 }
 .shop-container .products img {
   width: 150px;
-   border-radius: 10px;
+  border-radius: 10px;
 }
-.shop-container .products img+img{
-margin-left:2em;
-margin-top:1em;
+.shop-container .products img + img {
+  margin-left: 2em;
+  margin-top: 1em;
 }
 
 .shop-container .btn {
   position: absolute;
   top: 70%;
   left: 46%;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 .shop-container .btn button {
   font-size: 1.5em;
@@ -348,213 +340,282 @@ margin-top:1em;
   font-size: 0.7em;
   color: red;
 }
-@media (max-width:640px ) {
-nav .navbar_cart_login_socialmedia {
-  display:none!important;}
-
-nav .navbar_container .navbar_menu img{
-  width:200px;
-}
-nav .navbar_container p{
-  display:none;
-}
-nav .navbar_container svg{
-  width:150px;
-  height:50px;
-}
-.navbar_search{
- margin-right:4em; 
-}
-.navbar_search input{
-  width:900px;
-  height:100px;
-  font-size:2.5em;
-  
-}
-.navbar-nav{
- display: none!important;
-}
-
-.casseroles .image img{
-  width:50px;
-}
-
-
-.receipes-container .receipes ,
-.receipes-container-two .receipes-two, 
-.receipes-container-three .receipes-three
-{
-  
- /* margin-right:0!important;
-  margin-left:0!important; */
-  display: flex;
-  flex-direction:column;
-
-}
-.receipes-container .receipes .receipe,
-.receipes-container-two .receipes-two .receipe, 
-.receipes-container-three .receipes-three .receipe {
-width:100%;
-   display: flex; 
-}
-
-.receipes-container .receipes .receipe .receipe-author,
-.receipes-container-two .receipes-two .receipe .receipe-author , 
-.receipes-container-three .receipes-three .receipe .receipe-author {font-size:2em;
-
-
-}
-.receipes-container .receipes .receipe .receipe-body h3,
-.receipes-container-two .receipes-two .receipe .receipe-body h3, 
-.receipes-container-three .receipes-three .receipe .receipe-body h3{
-  font-size:3.8em!important;
-}
-.receipes-container .receipes .receipe .receipe-body p,
-.receipes-container-two .receipes-two .receipe .receipe-body p, 
-.receipes-container-three .receipes-three .receipe .receipe-body p{
-  font-size:1.8em!important;
-}
-.receipes-container .receipes .receipe .add-button,
-.receipes-container-two .receipes-two .receipe .add-button, 
-.receipes-container-three .receipes-three .receipe .add-button{
-  width:100px;
-  padding:30px 0!important;
-}
-.star-widget i{
-  font-size:2.5em;
-}
-.add-button i{
-  font-size:3em;
-}
-.container-three .peach h2{
-  font-size:5em!important;
-  text-align: center;
-}
-.container-three .peach .receipe h3{
-  font-size: 3.5em!important;
-  text-align: center;
-}
-.peachreceipes{
-  display:flex;
-  flex-direction: column;
-
- 
-}
-.latesummer-container .summer .receipes{
-  display: flex;
-  flex-direction: column;
-}
-.latesummer-container .summer h2{
-   font-size:5em!important;
-
-}
-.latesummer-container .summer .receipes h3{
-   font-size: 3.5em!important;
-  text-align: center;
-}
-.shop-container .products img{
-  width:200px;
-}
-.shop-container .btn{
-  width:200px;
-  padding:1em 0;
-  font-size:2em;
-}
-.mohinga-container .mohinga .tag{
-  font-size:2em;
- 
-}
-.mohinga-container .mohinga h3{
-  font-size:3.5em!important;
-}
-.mohinga-container .mohinga .text span{
-  font-size:1em!important;
-}
-.mohinga-container .mohinga .text p{
-  font-size:2em!important;
+dialog {
+  top: 5%;
+  left: 35%;
+  width: 410px;
+  max-width: 100%;
+  position: fixed;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+}
+form .header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+.header h2 {
+  margin: 0;
+}
+form {
+  padding: 30px 40px;
+}
+form .form-control {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  position: relative;
+}
+form .form-control label {
+  display: block;
+  margin-bottom: 2px;
+}
+form .form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+}
 
-  text-overflow: ellipsis;
+form .form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
 }
-.mohinga-container .mohinga .text .rating i{
-   font-size:2.5em;
+form .form-control small {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
 }
-.container-five .trending_saladmeal{
-  display:flex;
-  flex-direction: column;
-  font-size:2.5em;
+form .form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
 }
-.container-five .trending_saladmeal .cornsalad_meal {
- width:100%;
-  display:flex;
-  flex-direction: row!important;
-justify-content: space-around;
+form .submit-button button {
+  background-color: #931a25;
+  border: 2px solid black;
+  font-family: inherit;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+form .form-control.success input {
+  border-color: #2ecc71;
+}
 
+form .form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
 }
-.container-five .trending_saladmeal .trending{
-  width:100%;
+
+form .form-control.error input {
+  border-color: #e74c3c;
 }
-.container-five .trending_saladmeal .trending h3{
-  font-size:1.8em!important;
+form .form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
 }
-.container-six .casseroles .tag{
-  font-size:2em!important;
-  top:0;
-}
- .container-six .casseroles .casseroles-text{
-width:100%;
- }
- .container-six .casseroles .casseroles-text .text h3{
-  font-size: 5em!important;
- }
- .container-six .casseroles .casseroles-text .text p{
-  font-size:2.5em!important;
- }
-  .container-six .casseroles .casseroles-text .text button{
-    font-size:1.5em!important;
-    width:200px;
-    padding:2em;
+@media (max-width: 640px) {
+  nav .navbar_cart_login_socialmedia {
+    display: none !important;
   }
-.container-six .casseroles .casseroles-text .text{
-  width:100%;
-margin:0;
-padding:3em;
-}
-.container-six .casseroles .image{
-  display: none;
-}
-.show-container .show-show{
-  display:flex;
- 
-  flex-direction: column;
-}
-.show-container .show-show h2{
-  font-size:4.6em!important;
-}
-.show-container .show-show .recent-show{
-  width:100%;
-}
-.show-container .show-show .recent-show h2{
-  font-size:4em!important;
-}
-.show-container .show-show .anothershows div+div{
-   margin-bottom:3em;
-}
-.show-container .show-show .anothershows h3{
-    font-size:3.5em!important;
-}
-.show-container .show-show .anothershows p{
- font-size:3em!important;
-}
 
-footer .firstline,
-footer .secondline{
-  display:flex;
-  flex-direction: column;
- align-items: center;
-  font-size:3.2em;
-}
+  nav .navbar_container .navbar_menu img {
+    width: 200px;
+  }
+  nav .navbar_container p {
+    display: none;
+  }
+  nav .navbar_container svg {
+    width: 150px;
+    height: 50px;
+  }
+  .navbar_search {
+    margin-right: 4em;
+  }
+  .navbar_search input {
+    width: 900px;
+    height: 100px;
+    font-size: 2.5em;
+  }
+  .navbar-nav {
+    display: none !important;
+  }
+
+  .casseroles .image img {
+    width: 50px;
+  }
+
+  .receipes-container .receipes,
+  .receipes-container-two .receipes-two,
+  .receipes-container-three .receipes-three {
+    /* margin-right:0!important;
+  margin-left:0!important; */
+    display: flex;
+    flex-direction: column;
+  }
+  .receipes-container .receipes .receipe,
+  .receipes-container-two .receipes-two .receipe,
+  .receipes-container-three .receipes-three .receipe {
+    width: 100%;
+    display: flex;
+  }
+
+  .receipes-container .receipes .receipe .receipe-author,
+  .receipes-container-two .receipes-two .receipe .receipe-author,
+  .receipes-container-three .receipes-three .receipe .receipe-author {
+    font-size: 2em;
+  }
+  .receipes-container .receipes .receipe .receipe-body h3,
+  .receipes-container-two .receipes-two .receipe .receipe-body h3,
+  .receipes-container-three .receipes-three .receipe .receipe-body h3 {
+    font-size: 3.8em !important;
+  }
+  .receipes-container .receipes .receipe .receipe-body p,
+  .receipes-container-two .receipes-two .receipe .receipe-body p,
+  .receipes-container-three .receipes-three .receipe .receipe-body p {
+    font-size: 1.8em !important;
+  }
+  .receipes-container .receipes .receipe .add-button,
+  .receipes-container-two .receipes-two .receipe .add-button,
+  .receipes-container-three .receipes-three .receipe .add-button {
+    width: 100px;
+    padding: 30px 0 !important;
+  }
+  .star-widget i {
+    font-size: 2.5em;
+  }
+  .add-button i {
+    font-size: 3em;
+  }
+  .container-three .peach h2 {
+    font-size: 5em !important;
+    text-align: center;
+  }
+  .container-three .peach .receipe h3 {
+    font-size: 3.5em !important;
+    text-align: center;
+  }
+  .peachreceipes {
+    display: flex;
+    flex-direction: column;
+  }
+  .latesummer-container .summer .receipes {
+    display: flex;
+    flex-direction: column;
+  }
+  .latesummer-container .summer h2 {
+    font-size: 5em !important;
+  }
+  .latesummer-container .summer .receipes h3 {
+    font-size: 3.5em !important;
+    text-align: center;
+  }
+  .shop-container .products img {
+    width: 200px;
+  }
+  .shop-container .btn {
+    width: 200px;
+    padding: 1em 0;
+    font-size: 2em;
+  }
+  .mohinga-container .mohinga .tag {
+    font-size: 2em;
+  }
+  .mohinga-container .mohinga h3 {
+    font-size: 3.5em !important;
+  }
+  .mohinga-container .mohinga .text span {
+    font-size: 1em !important;
+  }
+  .mohinga-container .mohinga .text p {
+    font-size: 2em !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+    text-overflow: ellipsis;
+  }
+  .mohinga-container .mohinga .text .rating i {
+    font-size: 2.5em;
+  }
+  .container-five .trending_saladmeal {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+  }
+  .container-five .trending_saladmeal .cornsalad_meal {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+  .container-five .trending_saladmeal .trending {
+    width: 100%;
+  }
+  .container-five .trending_saladmeal .trending h3 {
+    font-size: 1.8em !important;
+  }
+  .container-six .casseroles .tag {
+    font-size: 2em !important;
+    top: 0;
+  }
+  .container-six .casseroles .casseroles-text {
+    width: 100%;
+  }
+  .container-six .casseroles .casseroles-text .text h3 {
+    font-size: 5em !important;
+  }
+  .container-six .casseroles .casseroles-text .text p {
+    font-size: 2.5em !important;
+  }
+  .container-six .casseroles .casseroles-text .text button {
+    font-size: 1.5em !important;
+    width: 200px;
+    padding: 2em;
+  }
+  .container-six .casseroles .casseroles-text .text {
+    width: 100%;
+    margin: 0;
+    padding: 3em;
+  }
+  .container-six .casseroles .image {
+    display: none;
+  }
+  .show-container .show-show {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .show-container .show-show h2 {
+    font-size: 4.6em !important;
+  }
+  .show-container .show-show .recent-show {
+    width: 100%;
+  }
+  .show-container .show-show .recent-show h2 {
+    font-size: 4em !important;
+  }
+  .show-container .show-show .anothershows div + div {
+    margin-bottom: 3em;
+  }
+  .show-container .show-show .anothershows h3 {
+    font-size: 3.5em !important;
+  }
+  .show-container .show-show .anothershows p {
+    font-size: 3em !important;
+  }
+
+  footer .firstline,
+  footer .secondline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.2em;
+  }
 }

@@ -21,15 +21,23 @@
 </head>
 
 <body>
+
+
+
+
   <nav class="py-2 bg-white  ">
     <div class="navbar_container container d-flex justify-content-between align-items-center p-0">
       <div class="navbar_menu d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"
+
+
+<svg xmlns="http://www.w3.org/2000/svg" id="Isolation_Mode" data-name="Isolation Mode" viewBox="0 0 24 24"
           width="20" height="25">
           <rect y="10.5" width="24" height="3" />
           <rect y="3.5" width="24" height="3" />
           <rect y="17.5" width="24" height="3" />
-        </svg>
+        </svg> 
+
+        
         <p class="m-0">EXPLORE</p>
         <img src="images/chef.png" / alt="logo">
       </div>
@@ -60,20 +68,68 @@
       </div>
 
       <div class="navbar_cart_login_socialmedia d-flex">
-        <div class="cart_and_login border-end border-2 border-dark pe-1">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="25">
+        <div class="cart_and_login border-end border-2 border-dark pe-1 d-flex">
+
+
+          
+<dialog class="dialog" id="modal">
+ 
+ <form class="form"> 
+    <div class="closemodal-button"><button>+</button></div>
+<div class="header"><h2>Create Account</h2></div>
+
+<div class="form-control">
+  <label>Name</label>
+  <input type="text" placeholder="User Name" id="username">
+  <i class="fas fa-check-circle"></i>
+  <i class="fas fa-exclamation-circle"></i>
+   <small>error message</small>
+</div>
+
+<div class="form-control">
+  <label>Email</label>
+  <input type="email" placeholder="User Email" id="useremail">
+ <i class="fas fa-check-circle"></i>
+  <i class="fas fa-exclamation-circle"></i>
+  <small>error message</small>
+</div>
+<div class="form-control">
+  <label>Password</label>
+  <input type="password" placeholder="User Password" id="userpassword">
+  <i class="fas fa-check-circle"></i>
+  <i class="fas fa-exclamation-circle"></i>
+   <small>error message</small>
+</div>
+<div class="form-control">
+  <label>Password Check</label>
+  <input type="password" placeholder="User Password" id="userpassword2">
+  <i class="fas fa-check-circle"></i>
+  <i class="fas fa-exclamation-circle"></i>
+   <small>error message</small>
+</div>
+
+<div class="submit-button" >
+  <button>Submit</button>
+</div>
+ </form>
+</dialog>
+   
+
+<button class="openmodal-button">
+ <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="25">
             <path
               d="M19,0H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,19,0ZM7,22V21a5,5,0,0,1,10,0v1Zm15-3a3,3,0,0,1-3,3V21A7,7,0,0,0,5,21v1a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2H19a3,3,0,0,1,3,3Z" />
             <path d="M12,4a4,4,0,1,0,4,4A4,4,0,0,0,12,4Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,10Z" />
-          </svg>
-
+        </svg>
+      </button>
           <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="25">
             <path
               d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z" />
             <circle cx="7" cy="22" r="2" />
             <circle cx="17" cy="22" r="2" />
           </svg>
-        </div>
+      </div>
+    
 
         <div class="social_media ">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
@@ -109,6 +165,8 @@
   </nav>
 
   <main>
+    
+
     <section class="receipes-container my-5">
       <div class="container receipes row mx-auto px-0">
         <!-- <div class="heart">
@@ -461,8 +519,7 @@ alt=""/>
       </div>
    </div>
     </section>
-
-
+ 
   </main>
   <footer class="mt-5 ">
     <div class="container mx-auto py-5">
@@ -484,20 +541,25 @@ alt=""/>
       </div>
     </div>
   </footer> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    
     <script src="owl_carousel/owl.carousel.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="app.js "></script> 
    <script>
   AOS.init();
 </script>
+
+
+
+
 </body>
 
 </html>

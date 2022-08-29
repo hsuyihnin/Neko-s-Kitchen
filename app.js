@@ -11,16 +11,82 @@ $( '.owl-carousel' ).owlCarousel( {
   margin: 10,
   nav: true,
   responsive: {
-   
- 1536: {
+
+    1536: {
       items: 6
     },
   }
 } )
 
 
-let receipes = [];
+const dialog = document.querySelector( '#modal' );
+const openBtn = document.querySelector( '.openmodal-button' );
+const closeBtn = document.querySelector( '.closemodal-button' );
+openBtn.addEventListener( 'click', () => modal.showModal() );
+closeBtn.addEventListener( 'click', () => modal.close() );
 
+const form = document.querySelector( '.form' );
+const username = document.querySelector( '#username' );
+const email = document.querySelector( '#useremail' );
+const password = document.querySelector( '#userpassword' );
+const password2 = document.querySelector( '#userpassword2' );
+
+form.addEventListener( 'submit', ( e ) =>
+{
+  e.preventDefault();
+  checkInput();
+} )
+
+function checkInput ()
+{
+  const usernameValue = username.value;
+  const emailValue = email.value;
+  const passwordValue = password.value;
+  const password2Value = password2.value;
+
+  if ( usernameValue==='')
+  {
+    setErrorFor( username, 'User name cannot be empty' );
+  } else
+  {
+    setSuccessFor( username );
+  }
+  if (emailValue==='')
+  {
+    setErrorFor( email, 'User email cannot be empty' );
+  }
+}
+
+
+ function setErrorFor ( input,message )
+ {
+  console.log(setErrorFor())
+   const formControl = input.parentElement;
+   const small = formControl.querySelector( 'small' );
+   
+
+   small.textContent = message;
+   formControl.classList = 'form-control error';
+ }
+
+function isEmail ()
+{
+  return 
+}
+
+ function setSuccessFor ( input )
+ {
+   const formControl = input.parentElement;
+   formControl.classname ='form-control success';
+
+
+ }
+
+
+
+
+
+let receipes = [];
 
 function AddToReceipesListOne ( receipeone, index = 1 )
 {
@@ -157,7 +223,7 @@ function showreceipesToUI ()
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
-        button.addEventListener( "click", saveToCart );
+        button.addEventListener( "click",saveToCart)
       } )
     } ).catch( ( error ) => console.log( error ) );
 
@@ -206,7 +272,7 @@ function showreceipesToUI ()
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
-        button.addEventListener( "click", saveToCart );
+        button.addEventListener( "click",saveToCart )
       } )
     } ).catch( ( error ) => console.log( error ) );
 
@@ -257,7 +323,7 @@ function showreceipesToUI ()
       var saveToCartButtons = document.querySelectorAll( ".add-button" );
       saveToCartButtons.forEach( ( button ) =>
       {
-        button.addEventListener( "click", saveToCart );
+        button.addEventListener( "click", saveToCart);
       } )
     } ).catch( ( error ) => console.log( error ) );
 }
@@ -279,7 +345,7 @@ function saveToCart ( event )
     author: author,
     id: Number( id ),
   }
-  receipes.push( receipe );
+
 
 
 
