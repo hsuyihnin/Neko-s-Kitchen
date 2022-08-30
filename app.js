@@ -25,64 +25,6 @@ const closeBtn = document.querySelector( '.closemodal-button' );
 openBtn.addEventListener( 'click', () => modal.showModal() );
 closeBtn.addEventListener( 'click', () => modal.close() );
 
-const form = document.querySelector( '.form' );
-const username = document.querySelector( '#username' );
-const email = document.querySelector( '#useremail' );
-const password = document.querySelector( '#userpassword' );
-const password2 = document.querySelector( '#userpassword2' );
-
-form.addEventListener( 'submit', ( e ) =>
-{
-  e.preventDefault();
-  checkInput();
-} )
-
-function checkInput ()
-{
-  const usernameValue = username.value;
-  const emailValue = email.value;
-  const passwordValue = password.value;
-  const password2Value = password2.value;
-
-  if ( usernameValue==='')
-  {
-    setErrorFor( username, 'User name cannot be empty' );
-  } else
-  {
-    setSuccessFor( username );
-  }
-  if (emailValue==='')
-  {
-    setErrorFor( email, 'User email cannot be empty' );
-  }
-}
-
-
- function setErrorFor ( input,message )
- {
-  console.log(setErrorFor())
-   const formControl = input.parentElement;
-   const small = formControl.querySelector( 'small' );
-   
-
-   small.textContent = message;
-   formControl.classList = 'form-control error';
- }
-
-function isEmail ()
-{
-  return 
-}
-
- function setSuccessFor ( input )
- {
-   const formControl = input.parentElement;
-   formControl.classname ='form-control success';
-
-
- }
-
-
 
 
 
@@ -295,7 +237,7 @@ function showreceipesToUI ()
       const containerThree = document.querySelector( '.container-three' );
       const lateSummer = document.querySelector( '.latesummer-container' );
       const mohinga = document.querySelector( '.mohinga-container' );
-
+      const owlCarousel = document.querySelector( '.container-two' );
 
       search.addEventListener( 'keyup', () =>
       {
@@ -312,6 +254,7 @@ function showreceipesToUI ()
         containerThree.style.display = 'none';
         lateSummer.style.display = 'none';
         mohinga.style.display = 'none';
+        owlCarousel.style.display = 'none';
 
         filterReceipes.forEach( ( item ) =>
         {

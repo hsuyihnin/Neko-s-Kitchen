@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="shopping.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar container d-flex justify-content-between align-items-center">
+            <h1 class="fw-bold"><em>Coffee Machines</em></h2>
+                <div class="navbar-nav">
+                    <ul class="d-flex mb-0 ">
+                        <li><a href="http://127.0.0.1:5501/index.html">HOME</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex pb-1 user_sidebar">
+                    <div class="user">
+                    <i class="fa-regular fa-user"></i></div>
+
+                    <a class="btn" type="button" data-bs-toggle="offcanvas" rile="button"
+                        aria-controls="cart-sidebar" href="#card-sidebar">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="card-sidebar"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                          <span>My Cart</span>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="offcanvas-body ">
+                            <div class="cart-products">
+                            <!-- <div
+                                class="cart-product row justify-content-around align-items-center border py-3 px-1 fs-6">
+                                <div class=" col-2 p-0">
+                                    <img class="cart-image w-100" src="images/machine1.jpeg" alt="" />
+                                </div>
+
+                                <div class="col-8 p-0">
+
+                                    <h3 class="cart-title fs-4">Title</h3>
+                                    <div class="d-flex justify-content-between">
+                                        <input class='cart-quantity-input' type='number' min='1' value='1' />
+                                        <p>price</p>
+
+
+                                    </div>
+
+                                    <button class="cart-remove btn btn-danger btn-sm text-center rounded-full mt-2">
+                                        <i class="fa-solid fa-trash fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div> -->
+                            
+                        </div>
+<!-- <div class="message">There is no item in your account.</div> -->
+                        <div class="row text-end">
+
+                            <p class="col">Total</p>
+                            <div class=" col">
+                            <span>$</span>
+                            <span class="total-price"></span>
+                        </div>
+
+</div>
+                            <p class="text-center">Including shipping fees and taxes.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="machineone-container my-5">
+            <div class="container p-0 mx-auto products d-flex flex-column">
+                <!-- <div class="product d-flex">
+<img class="image w-100 p-0" src="images/machine1.jpeg" alt="">
+<div class="text py-2 px-3">
+    <h2 class="fw-bold mb-2 brand">Cold Brew</h2>
+    <small class="fs-4 fw-bold">$50.56</small>
+    <div class="d-flex option my-3">
+        <div class="border border-3 border-dark rounded-3">
+<p class="m-0 fw-bold ">Subscribe</p>
+<small class="fw-bold">$50.56</small>
+        </div>
+
+        <div class="border border-3 rounded-3">
+<p class="m-0 ">One-Time</p>
+<small>$50.56</small>
+        </div>
+    </div>
+
+    <p>Choose your Delivery Frequency : <i class="fa-solid fa-circle-exclamation"></i></p>
+
+<div class="d-flex option-two mb-2">
+
+<div class="border border-3 border-dark rounded-3">
+<p class="m-0">Every 2 months</p>
+<small>high use</small>
+</div>
+<div class="border border-3 rounded-3">
+    <p class="m-0">Every 4 months</p>
+    <small>medium use</small>
+</div>
+<div  class="border border-3 rounded-3">
+    <p class="m-0">Every 6 months</p>
+<small>low use</small></div>
+
+</div>
+<button class="btn">Add To Cart</button>
+
+<div class="d-flex flex-column descripe mt-2">
+    <div class="name">Description</div>
+    <div class="detail">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae adipisci, rem voluptatibus corporis alias maiores consectetur quod velit voluptatum.</p>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae, id consectetur sit deserunt laborum.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi et maiores eos corrupti vitae dolorem!</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quibusdam suscipit et nesciunt veniam quidem!</li>
+        </ul>
+        <p>View our <span>shipping & returns</span> policy.</p>
+    </div>
+</div>
+
+</div>
+
+</div> -->
+            </div>
+        </section>
+
+    </main>
+
+<footer class="w-100">
+    <div class="container mx-auto py-5">
+        <div class="d-flex justify-content-between firstline">
+            <a href="#">Privacy Notice</a>
+            <a href="#">Advertise</a>
+            <a href="#">Online Closed Captioning</a>
+            <a href="#">Site Map</a>
+            <a href="#">Subscribe</a>
+            <a href="#">Apps</a>
+            <a href="#">Content Licensing</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-3 secondline">
+            <a href="#">International Editions </a>
+            <a href="#">The Discovery Family of Networks</a>
+            <span>© 2022 warner Bros.Discovery,Inc. or its subsidiaries and
+                affiliates.All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script> 
+         <script src="shopping.js"></script>
+</body>
+
+</html>

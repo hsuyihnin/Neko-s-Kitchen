@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Best Overall: Keurig K-Elite Brewer",
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/products/2019/10/9/rx_Keurig-K-Elite.jpg.rend.hgtvcom.616.616.suffix/1570646045576.jpeg",
+    "price": 140,
+    "pricetwo":145
+  },
+  {
+    "title": "Best for Small Spaces: Keurig K-Mini",
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/products/2019/10/8/rx_Keurig-K-Mini.jpg.rend.hgtvcom.616.616.suffix/1570570200019.jpeg",
+    "price": 99,
+    "pricetwo": 120
+  },
+  {
+    "title": "Best High-End: Keurig K-Café",
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/products/2019/10/4/rx_keurig-k-cafe-single-serve-k-cup-pod-coffee-latte-and-cappuccino-maker.jpeg.rend.hgtvcom.616.616.suffix/1570220574375.jpeg",
+    "price": 167,
+    "pricetwo": 175
+  },
+  {
+    "title": "Best Big Batch: Keurig K-Duo Plus",
+    "image": "https://food.fnr.sndimg.com/content/dam/images/food/products/2019/12/11/rx_keurig-k-duo-plus-coffee-maker-with-single-serve-k-cup-pod--carafe-brewer.jpeg.rend.hgtvcom.616.616.suffix/157609349298.jpeg",
+    "price": 170,
+    "pricetwo":180
+  }
+]

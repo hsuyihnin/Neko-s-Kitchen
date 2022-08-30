@@ -7,7 +7,7 @@
 }
 
 body {
-
+width:1536px;
   font-family: "Josefin Sans", sans-serif !important;
 }
 
@@ -28,6 +28,7 @@ nav {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   position:sticky;
   top:0;
+  z-index: 1;
 }
 
 .navbar-nav .nav-items {

@@ -266,7 +266,19 @@ nav {
   padding-top: 5em;
   width: 250px;
 }
+.shop-container .btn:hover{
+  border:1px solid orangered;
+}
+.shop-container .btn a{
+  padding:5px;
+  color:black;
+  text-decoration: none;
+}
 
+.shop-container .btn a:hover{
+
+  color:orangered;
+}
 .show-container .container .anothershows {
   text-align: center;
   height: 786px;
@@ -403,26 +415,27 @@ form .submit-button button {
   border-radius: 4px;
   width: 100%;
 }
-form .form-control.success input {
-  border-color: #2ecc71;
-}
 
-form .form-control.success i.fa-check-circle {
-  color: #2ecc71;
-  visibility: visible;
-}
-
-form .form-control.error input {
-  border-color: #e74c3c;
-}
-form .form-control.error i.fa-exclamation-circle {
-  color: #e74c3c;
-  visibility: visible;
-}
 @media (max-width: 640px) {
-  nav .navbar_cart_login_socialmedia {
-    display: none !important;
-  }
+  
+nav .navbar_cart_login_socialmedia .cart_and_login{
+  display: none !important;
+}
+nav .social_media{
+ display:none !important;
+}
+nav .social_media a{
+  display:block!important;
+
+}
+
+nav a.savebookmark{
+  padding-right:1em!important;
+}
+nav a .fa-bookmark{
+  font-size:4.5em!important;
+ 
+}
 
   nav .navbar_container .navbar_menu img {
     width: 200px;
@@ -438,7 +451,7 @@ form .form-control.error i.fa-exclamation-circle {
     margin-right: 4em;
   }
   .navbar_search input {
-    width: 900px;
+    width: 600px;
     height: 100px;
     font-size: 2.5em;
   }
@@ -464,7 +477,12 @@ form .form-control.error i.fa-exclamation-circle {
     width: 100%;
     display: flex;
   }
-
+.receipes-container .receipes .receipe .receipe-body,
+  .receipes-container-two .receipes-two .receipe .receipe-body,
+  .receipes-container-three .receipes-three .receipe .receipe-body
+  {
+padding:2em 4em!important;
+  }
   .receipes-container .receipes .receipe .receipe-author,
   .receipes-container-two .receipes-two .receipe .receipe-author,
   .receipes-container-three .receipes-three .receipe .receipe-author {
@@ -473,24 +491,24 @@ form .form-control.error i.fa-exclamation-circle {
   .receipes-container .receipes .receipe .receipe-body h3,
   .receipes-container-two .receipes-two .receipe .receipe-body h3,
   .receipes-container-three .receipes-three .receipe .receipe-body h3 {
-    font-size: 3.8em !important;
+    font-size: 4.5em !important;
   }
   .receipes-container .receipes .receipe .receipe-body p,
   .receipes-container-two .receipes-two .receipe .receipe-body p,
   .receipes-container-three .receipes-three .receipe .receipe-body p {
-    font-size: 1.8em !important;
+    font-size: 2.3em !important;
   }
   .receipes-container .receipes .receipe .add-button,
   .receipes-container-two .receipes-two .receipe .add-button,
   .receipes-container-three .receipes-three .receipe .add-button {
-    width: 100px;
-    padding: 30px 0 !important;
+    width: 150px;
+    padding: 45px 0 !important;
   }
   .star-widget i {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .add-button i {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .container-three .peach h2 {
     font-size: 5em !important;
@@ -522,15 +540,16 @@ form .form-control.error i.fa-exclamation-circle {
     width: 200px;
     padding: 1em 0;
     font-size: 2em;
+    
   }
   .mohinga-container .mohinga .tag {
     font-size: 2em;
   }
   .mohinga-container .mohinga h3 {
-    font-size: 3.5em !important;
+    font-size: 3.7em !important;
   }
   .mohinga-container .mohinga .text span {
-    font-size: 1em !important;
+    font-size: 1.5em !important;
   }
   .mohinga-container .mohinga .text p {
     font-size: 2em !important;
@@ -542,7 +561,7 @@ form .form-control.error i.fa-exclamation-circle {
     text-overflow: ellipsis;
   }
   .mohinga-container .mohinga .text .rating i {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .container-five .trending_saladmeal {
     display: flex;
@@ -567,6 +586,7 @@ form .form-control.error i.fa-exclamation-circle {
   }
   .container-six .casseroles .casseroles-text {
     width: 100%;
+    
   }
   .container-six .casseroles .casseroles-text .text h3 {
     font-size: 5em !important;
@@ -615,7 +635,7 @@ form .form-control.error i.fa-exclamation-circle {
   footer .secondline {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     font-size: 3.2em;
   }
 }
