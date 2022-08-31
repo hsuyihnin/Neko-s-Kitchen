@@ -69,13 +69,12 @@ function addToCartUI ( image, title, price )
                                 </div>`;
 
     cartProducts.appendChild( div );
-
+    div.querySelector( '.cart-remove' ).addEventListener( 'click', removeProduct );
+   
 const cardSideBar = document.querySelector( '#card-sidebar' );
 const totalItems = cardSideBar.querySelector( 'h5' );
 const items = document.querySelectorAll( '.cart-product' );
-    totalItems.innerHTML = `<span>My Cart (${items.length})</span>`;
-
-    div.querySelector( '.cart-remove' ).addEventListener( 'click', removeProduct );
+    totalItems.innerHTML = `<span>My Cart (${ items.length })</span>`;
     div.querySelector( '.cart-quantity-input' ).addEventListener( 'change', quantityChange );
 }
 function removeProduct (event)
