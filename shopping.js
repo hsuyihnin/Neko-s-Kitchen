@@ -77,6 +77,7 @@ const items = document.querySelectorAll( '.cart-product' );
     totalItems.innerHTML = `<span>My Cart (${ items.length })</span>`;
     div.querySelector( '.cart-quantity-input' ).addEventListener( 'change', quantityChange );
 }
+
 function removeProduct (event)
 {
     const removeConfirm = confirm( "Are you sure to remove?" );

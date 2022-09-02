@@ -50,6 +50,29 @@ nav {
   padding-bottom:3.5em;
 
 }
+ .receipe{
+   position:relative;
+} 
+.receipe .remove-button{
+  position:absolute;
+  top:0;
+
+  right:0;
+  font-size: 2em;
+  color:red;
+  border:0;
+  background-color:transparent;
+
+  
+  
+}
+
+.receipe i:hover{
+  color:orangered;
+}
+.receipe i:active{
+  color:black;
+}
 .background {
   height: 12vh;
   background-color: #fabb51;
@@ -121,7 +144,8 @@ font-family: 'IBM Plex Sans', sans-serif;
   }
   
 footer {
- 
+ position:fixed;
+bottom:0;
   background-color: #5e454b;
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -129,4 +153,65 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+@media(max-width: 640px){
+  .background{
+    height:50vh;
+  }
+  .sentence h3{
+    font-size:3.5em!important;
+  }
+  .sentence p{
+    font-size:2.5em;
+  }
+  .sentence .share{
+    font-size:2em;
+  }
+  .text{   
+    left:22%;
+    width:230vw;
+  }
+
+  .sentence{
+   width:220vw;
+
+  }
+  .receipelist-container .receipes{
+    display:felx;
+    flex-direction: column;
+    
+  }
+  .receipelist-container .receipes .receipe{
+  width:100%;
+    display: flex;
+  }
+  
+  .receipelist-container .receipes .receipe .remove-button i{
+    font-size:3em;
+  }
+ 
+    .receipelist-container .receipes .receipe .receipe-body{
+      padding:1em;
+      width:100%;
+      margin:0;
+    }
+        .receipelist-container .receipes .receipe .receipe-body h3{
+          font-size:4.5em!important;
+        }
+        .receipelist-container .receipes .receipe .receipe-body p{
+          font-size:2em!important;
+        }
+        .membership_signup span{
+          font-size:3em!important;
+          
+        
+        }
+        footer .firstline,
+  footer .secondline {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 3.2em;
+  }
 }
