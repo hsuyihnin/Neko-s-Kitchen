@@ -7,9 +7,9 @@
 }
 body {
   background-color: #e4efe7 !important;
-  width: 1536px;
 
-  font-family: "Arvo", serif !important;
+
+ font-family: "Arvo", serif !important;
 }
 
 .navbar_cart_login_socialmedia {
@@ -44,7 +44,7 @@ nav {
 
 .navbar_search input {
   outline: none;
-  width: 300px;
+  width: 40%;
 }
 
 .new-receipes img {
@@ -444,7 +444,7 @@ nav a .fa-bookmark{
     display: none;
   }
   nav .navbar_container svg {
-    width: 150px;
+    width: 100px;
     height: 50px;
   }
   .navbar_search {
@@ -466,8 +466,7 @@ nav a .fa-bookmark{
   .receipes-container .receipes,
   .receipes-container-two .receipes-two,
   .receipes-container-three .receipes-three {
-    /* margin-right:0!important;
-  margin-left:0!important; */
+   
     display: flex;
     flex-direction: column;
   }
@@ -522,6 +521,7 @@ padding:2em 4em!important;
     display: flex;
     flex-direction: column;
   }
+  
   .latesummer-container .summer .receipes {
     display: flex;
     flex-direction: column;
@@ -638,4 +638,4 @@ padding:2em 4em!important;
     align-items:center;
     font-size: 3.2em;
   }
-}
+}  
