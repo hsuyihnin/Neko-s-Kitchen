@@ -8,8 +8,7 @@
 body {
   background-color: #e4efe7 !important;
 
-
- font-family: "Arvo", serif !important;
+  font-family: "Arvo", serif !important;
 }
 
 .navbar_cart_login_socialmedia {
@@ -31,6 +30,9 @@ nav {
   background-color: white;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
+.social_media svg + svg {
+  margin-left: 1em;
+}
 
 .navbar-nav .nav-items {
   list-style: none;
@@ -44,7 +46,7 @@ nav {
 
 .navbar_search input {
   outline: none;
-  width: 40%;
+  width: 80%;
 }
 
 .new-receipes img {
@@ -56,11 +58,18 @@ nav {
 .receipes-three .receipe {
   background-color: #f9f9f9;
 }
+.receipes-container .receipes {
+  gap: 2em;
+}
 .receipes-container .receipes .receipe {
   position: relative;
 }
 .receipes-container-two .receipes-two .receipe {
   position: relative;
+}
+
+.receipes-container-three .receipes-three {
+  gap: 2em;
 }
 .receipes-container-three .receipes-three .receipe {
   position: relative;
@@ -128,10 +137,6 @@ nav {
   justify-content: space-between;
 }
 
-.container-three .peachreceipes {
-  gap: 1em;
-}
-
 .latesummer-container {
   background-color: #d1e8e4;
 }
@@ -152,10 +157,6 @@ nav {
   position: absolute;
   transform: rotate(-40deg);
 }
-.latesummer-container .receipes {
-  gap: 5em;
-  margin: 2em 0 1em 0;
-}
 
 .container-four .permesan img {
   width: 500px;
@@ -167,7 +168,6 @@ nav {
 
 .container-five {
   background-color: #d1e8e4;
-  padding: 4em 0 4em 0;
 }
 .container-five a {
   text-decoration: none;
@@ -181,26 +181,8 @@ nav {
   cursor: pointer;
 }
 
-.container-five .allreceipes {
-  gap: 0.5em;
-}
-
 .container-five .cornsalad_meal {
   gap: 0.5em;
-}
-
-.container-five .first-three-receipes {
-  gap: 0.5em;
-}
-
-.last-three-receipes {
-  gap: 0.5em;
-}
-
-.receipes {
-  gap: 1em;
-  display: flex;
-  justify-content: space-between;
 }
 
 .receipes-three {
@@ -248,8 +230,8 @@ nav {
 }
 
 .casseroles .casseroles-text {
-  width: 400px;
-  height: 50vh;
+  width: 350px;
+  height: 60vh;
   background-color: #d1e8e4;
 }
 
@@ -258,26 +240,25 @@ nav {
   gap: 0.8em;
   position: absolute;
   left: 25%;
-  top: 10%;
+  top: 5%;
 }
 
 .casseroles .text {
   margin-left: 3em;
   padding-top: 5em;
-  width: 250px;
+  width: 260px;
 }
-.shop-container .btn:hover{
-  border:1px solid orangered;
+.shop-container .btn:hover {
+  border: 1px solid orangered;
 }
-.shop-container .btn a{
-  padding:5px;
-  color:black;
+.shop-container .btn a {
+  padding: 5px;
+  color: black;
   text-decoration: none;
 }
 
-.shop-container .btn a:hover{
-
-  color:orangered;
+.shop-container .btn a:hover {
+  color: orangered;
 }
 .show-container .container .anothershows {
   text-align: center;
@@ -415,144 +396,34 @@ form .submit-button button {
   border-radius: 4px;
   width: 100%;
 }
-
 @media (max-width: 640px) {
-  
-nav .navbar_cart_login_socialmedia .cart_and_login{
-  display: none !important;
-}
-nav .social_media{
- display:none !important;
-}
-nav .social_media a{
-  display:block!important;
-
-}
-
-nav a.savebookmark{
-  padding-right:1em!important;
-}
-nav a .fa-bookmark{
-  font-size:4.5em!important;
- 
-}
-
-  nav .navbar_container .navbar_menu img {
-    width: 200px;
+  .receipes-container .receipes .receipe button.add-button,
+  .receipes-container-two .receipes-two .receipe button.add-button,
+  .receipes-container-three .receipes-three .receipe button.add-button {
+    width: 60px;
   }
-  nav .navbar_container p {
-    display: none;
-  }
-  nav .navbar_container svg {
-    width: 100px;
-    height: 50px;
-  }
-  .navbar_search {
-    margin-right: 4em;
-  }
-  .navbar_search input {
-    width: 600px;
-    height: 100px;
-    font-size: 2.5em;
-  }
-  .navbar-nav {
-    display: none !important;
+  .receipes-container .receipes .receipe button.add-button i,
+  .receipes-container-two .receipes-two .receipe button.add-button i,
+  .receipes-container-three .receipes-three .receipe button.add-button i {
+    font-size: 1.8rem;
+    padding: 0.2em 0;
   }
 
-  .casseroles .image img {
-    width: 50px;
-  }
-
-  .receipes-container .receipes,
-  .receipes-container-two .receipes-two,
-  .receipes-container-three .receipes-three {
-   
-    display: flex;
-    flex-direction: column;
-  }
-  .receipes-container .receipes .receipe,
-  .receipes-container-two .receipes-two .receipe,
-  .receipes-container-three .receipes-three .receipe {
-    width: 100%;
-    display: flex;
-  }
-.receipes-container .receipes .receipe .receipe-body,
-  .receipes-container-two .receipes-two .receipe .receipe-body,
-  .receipes-container-three .receipes-three .receipe .receipe-body
-  {
-padding:2em 4em!important;
-  }
-  .receipes-container .receipes .receipe .receipe-author,
-  .receipes-container-two .receipes-two .receipe .receipe-author,
-  .receipes-container-three .receipes-three .receipe .receipe-author {
-    font-size: 2em;
-  }
-  .receipes-container .receipes .receipe .receipe-body h3,
-  .receipes-container-two .receipes-two .receipe .receipe-body h3,
-  .receipes-container-three .receipes-three .receipe .receipe-body h3 {
-    font-size: 4.5em !important;
-  }
-  .receipes-container .receipes .receipe .receipe-body p,
-  .receipes-container-two .receipes-two .receipe .receipe-body p,
-  .receipes-container-three .receipes-three .receipe .receipe-body p {
-    font-size: 2.3em !important;
-  }
-  .receipes-container .receipes .receipe .add-button,
-  .receipes-container-two .receipes-two .receipe .add-button,
-  .receipes-container-three .receipes-three .receipe .add-button {
-    width: 150px;
-    padding: 45px 0 !important;
-  }
-  .star-widget i {
-    font-size: 2em;
-  }
-  .add-button i {
-    font-size: 3.5em;
-  }
-  .container-three .peach h2 {
-    font-size: 5em !important;
-    text-align: center;
-  }
-  .container-three .peach .receipe h3 {
-    font-size: 3.5em !important;
-    text-align: center;
-  }
-  .peachreceipes {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .latesummer-container .summer .receipes {
-    display: flex;
-    flex-direction: column;
-  }
-  .latesummer-container .summer h2 {
-    font-size: 5em !important;
-  }
-  .latesummer-container .summer .receipes h3 {
-    font-size: 3.5em !important;
-    text-align: center;
+  .shop-container .overlay {
+    height: 260.26px;
   }
   .shop-container .products img {
-    width: 200px;
+    width: 50px;
+    margin: 0 !important;
   }
   .shop-container .btn {
-    width: 200px;
-    padding: 1em 0;
-    font-size: 2em;
-    
+    left: 40%;
   }
-  .mohinga-container .mohinga .tag {
-    font-size: 2em;
+  .mohinga-container .tag {
+    top: 13%;
+    left: -35%;
   }
-  .mohinga-container .mohinga h3 {
-    font-size: 3.7em !important;
-  }
-  .mohinga-container .mohinga .text span {
-    font-size: 1.5em !important;
-  }
-  .mohinga-container .mohinga .text p {
-    font-size: 2em !important;
+  .mohinga-container p {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -560,82 +431,24 @@ padding:2em 4em!important;
 
     text-overflow: ellipsis;
   }
-  .mohinga-container .mohinga .text .rating i {
-    font-size: 2em;
+  .container-six .image {
+    top: 70%;
+    left: 15%;
   }
-  .container-five .trending_saladmeal {
-    display: flex;
-    flex-direction: column;
-    font-size: 2.5em;
+  .container-six .image img {
+    width: 80px;
   }
-  .container-five .trending_saladmeal .cornsalad_meal {
-    width: 100%;
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-around;
+  .casseroles .casseroles-text {
+    margin: auto;
+    height: 50vh;
   }
-  .container-five .trending_saladmeal .trending {
-    width: 100%;
+  .casseroles .tag {
+    top: 6%;
+    left: 10%;
   }
-  .container-five .trending_saladmeal .trending h3 {
-    font-size: 1.8em !important;
+  .show-container .container .anothershows {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: vertical;
   }
-  .container-six .casseroles .tag {
-    font-size: 2em !important;
-    top: 0;
-  }
-  .container-six .casseroles .casseroles-text {
-    width: 100%;
-    
-  }
-  .container-six .casseroles .casseroles-text .text h3 {
-    font-size: 5em !important;
-  }
-  .container-six .casseroles .casseroles-text .text p {
-    font-size: 2.5em !important;
-  }
-  .container-six .casseroles .casseroles-text .text button {
-    font-size: 1.5em !important;
-    width: 200px;
-    padding: 2em;
-  }
-  .container-six .casseroles .casseroles-text .text {
-    width: 100%;
-    margin: 0;
-    padding: 3em;
-  }
-  .container-six .casseroles .image {
-    display: none;
-  }
-  .show-container .show-show {
-    display: flex;
-
-    flex-direction: column;
-  }
-  .show-container .show-show h2 {
-    font-size: 4.6em !important;
-  }
-  .show-container .show-show .recent-show {
-    width: 100%;
-  }
-  .show-container .show-show .recent-show h2 {
-    font-size: 4em !important;
-  }
-  .show-container .show-show .anothershows div + div {
-    margin-bottom: 3em;
-  }
-  .show-container .show-show .anothershows h3 {
-    font-size: 3.5em !important;
-  }
-  .show-container .show-show .anothershows p {
-    font-size: 3em !important;
-  }
-
-  footer .firstline,
-  footer .secondline {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    font-size: 3.2em;
-  }
-}  
+}
