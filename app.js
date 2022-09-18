@@ -262,15 +262,14 @@ function saveToCart(event) {
   };
 
   let allReceipes = JSON.parse(localStorage.getItem("favorites")) || [];
+  for (let i = 0; i < allReceipes.length; i++)
+    if ( allReceipes[ i ].id === receipe.id )
+    {
+      console.log("already saved")
+      return;
+    }
+
   allReceipes.push(receipe);
-
-  //  for ( let i = 0; i < allReceipes.length; i++ )
-
-  //   if(allReceipes[i].id !==receipe.id) {
-  //      console.log( 'saving' );
-  //     allReceipes.push(receipe)
-
-  //  }
 
   localStorage.setItem("favorites", JSON.stringify(allReceipes));
 }
